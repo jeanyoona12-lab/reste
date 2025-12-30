@@ -1,0 +1,13 @@
+.brand-pr {
+  width: 100%;
+  background-color: var(--color-BK);
+
+  /* 1. 배경 이미지: 꽉 차게 깔아주기 */
+  .pr-bg {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+    display: block;
+  }
+}

@@ -1,0 +1,166 @@
+@use "../../assets/scss/mixins" as mixin;
+@use "../../assets/scss/font" as *;
+
+.top_img {
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 70%;
+    overflow: hidden;
+    .viewer-wrap {
+        filter: drop-shadow(0 28px 30px rgba(0, 0, 0, 0.2));
+        border-radius: 12px;
+    }
+
+    .viewer-wrap model-viewer {
+        width: clamp(260px, 40vw, 520px);
+        height: clamp(260px, 30vw, 360px);
+        min-height: 320px;
+    }
+}
+
+.top_img_inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 120px 24px 90px;
+    @include mixin.flex-layout(row, space-between, center, 80px);
+}
+
+.top_img_left {
+    z-index: 10;
+    flex: 1;
+    min-width: 0;
+    @include mixin.flex-layout(row, flex-start, flex-end, 0);
+    // padding-top: 5rem;
+    model-viewer {
+        width: clamp(260px, 40vw, 520px);
+        height: clamp(220px, 30vw, 360px);
+        filter: drop-shadow(0 28px 30px rgba(0, 0, 0, 0.2));
+        border-radius: 12px;
+    }
+}
+.top_img_right {
+    @include mixin.flex-layout(column, flex-start, flex-start, 0);
+    gap: 1rem;
+    transform: translateY(-6px);
+    padding-right: clamp(0rem, 6vw, 8rem);
+}
+.top_img_title {
+    @include en-Display;
+    margin: 0;
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: 0.6px;
+}
+.top_img_desc {
+    @include ko-Body-Large;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(0, 0, 0, 0.78);
+}
+.price {
+    @include en-Title;
+    margin-top: 10px;
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+.btn {
+    @include ko-Body-Large;
+    margin-top: 1rem;
+    @include mixin.btn-style(#1f1f1f);
+    width: 260px;
+    height: 56px;
+    font-size: 18px;
+    // btn-style이 border-radius:50%로 되어있어서(원형) 여기서 강제 고정
+    border-radius: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        transform: translateY(-1px);
+        background: #111;
+        color: #fff;
+    }
+}
+// 반응형
+@media (max-width: 1024px) {
+    .top_img_inner {
+        padding: 110px 20px 80px;
+        gap: 48px;
+    }
+    .top_img_left {
+        min-width: 460px;
+        model-viewer {
+            width: 460px;
+            height: 330px;
+        }
+    }
+    .top_img_title {
+        font-size: 54px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top_img {
+        min-height: 100vh;
+        background-size: auto;
+        background-position: 50% -40%;
+    }
+    .top_img_inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 90px 18px 70px;
+    }
+    .top_img_left {
+        min-width: 0;
+        padding-bottom: 10px;
+        @include mixin.flex-layout(row, center, flex-end, 0);
+        model-viewer {
+            width: 92vw;
+            max-width: 520px;
+            height: 320px;
+        }
+    }
+    .top_img_right {
+        align-items: center;
+        flex-basis: auto;
+        transform: none;
+        padding-right: 0;
+    }
+    .btn {
+        width: 260px;
+    }
+}
+// 배경 이미지 css 지정
+.top_img {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.top_img_bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.dark_effect {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.top_img_inner {
+    position: relative;
+    z-index: 10;
+}

@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+@font-face {
+  font-family: "Arita Buri KR SemiBold";
+  src: url("../fonts/AritaBuriKR-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arita Buri KR Medium";
+  src: url("../fonts/AritaBuriKR-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 영문폰트 Lora */
+@mixin en-big {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 72px;
+}
+
+@mixin en-Display {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 56px;
+}
+
+@mixin en-Heading {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+}
+
+@mixin en-Title {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 32px;
+}
+
+@mixin en-Body-Large {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+}
+
+@mixin en-Body-Medium {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+}
+
+
+
+/* 한글폰트 아리따부리 */
+@mixin ko-Display {
+  font-family: "Arita Buri KR SemiBold";
+  font-weight: 600;
+  font-size: 56px;
+}
+
+@mixin ko-Heading {
+  font-family: "Arita Buri KR SemiBold";
+  font-weight: 600;
+  font-size: 40px;
+}
+
+@mixin ko-Title {
+  font-family: "Arita Buri KR Medium";
+  font-weight: 500;
+  font-size: 32px;
+}
+
+@mixin ko-Body-Large {
+  font-family: "Arita Buri KR Medium";
+  font-weight: 500;
+  font-size: 24px;
+}
+
+@mixin ko-Body-Medium {
+  font-family: "Arita Buri KR Medium";
+  font-weight: 500;
+  font-size: 16px;
+}
+

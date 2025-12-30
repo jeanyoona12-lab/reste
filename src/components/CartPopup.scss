@@ -1,0 +1,70 @@
+@use '../assets/scss/font.scss' as *;
+@use '../assets/scss/mixins.scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+.cart-popup-overlay{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.35);
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cart-popup{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 400px;
+    height: 25vh;
+    padding: 3rem 1rem;
+    text-align: center;
+    border: 0.8px solid rgba(255,255,255,0.24);
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.7);
+    backdrop-filter: saturate(100%) blur(5px);
+    box-shadow: 0 6px 6px rgba(177,177,177,0.49);
+    @include en-Body-Large;
+    @include desktop{
+        width: 600px;
+        @include en-Title;
+    }
+    .btn{
+        all: initial;
+        height: 15vh;
+        gap: 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        button{
+            cursor: pointer;
+            background-color: var(--color-main);
+            color: var(--color-sub-BR);
+            backdrop-filter: saturate(100%),blur(1px);
+            padding: 1rem 1.5rem ;
+            border: 0.3px solid rgba(241, 238, 185, 0.15);
+            border-radius: 50px;
+            box-shadow: 0 4px 4px solid rgba(255,255,255,0.44);
+            margin-bottom: 11px;
+            transition: 0.5s;
+            &:hover{
+                background: none;
+                box-shadow: 0 4px 4px solid rgba(255,255,255,0.14);
+                color: var(--color-sub-BR);
+                border-color: var(--color-sub-BR);
+                transform: translateY(-3px);
+            }
+        }
+    }
+    .name-txt {
+        @include ko-Body-Large;
+    }
+}

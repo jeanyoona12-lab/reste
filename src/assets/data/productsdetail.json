@@ -1,0 +1,131 @@
+[
+  {
+    "id": "cloud",
+    "title": "CLOUD",
+    "price": 1245000,
+    "description": "부클 텍스처의 촉감과 시각적 따뜻함이 공간에 깊이를 더함",
+    "model3D": "/models/Cloud.glb",
+    "theme" : "light",
+    "detailPoster": "/img/MainCloud.jpg",
+    "detailCuts": [
+    { "id": 1, "base": "/img/cloud_front.png", "hover": "/img/cloud_01.png" },
+    { "id": 2, "base": "/img/cloud_left.png", "hover": "/img/cloud_02.jpg" },
+    { "id": 3, "base": "/img/cloud_right.png", "hover": "/img/cloud_03.png" },
+    { "id": 4, "base": "/img/cloud_top.png", "hover": "/img/cloud_04.png" },
+    { "id": 5, "base": "/img/cloud_back.png", "hover": "/img/cloud_05.png" }
+  ]
+  },
+  {
+    "id": "velora",
+    "title": "VELORA",
+    "price": 1320000,
+    "description": "묵직한 착좌감과 안정적인 프레임으로 휴식에 최적화",
+    "model3D": "/models/Velora.glb",
+    "theme" : "dark",
+    "detailPoster": "/img/MainVelora.jpg",
+    "detailCuts": [
+    { "id": 1, "base": "/img/velora_front.png", "hover": "/img/velora_01.png" },
+    { "id": 2, "base": "/img/velora_left.png", "hover": "/img/velora_02.jpg" },
+    { "id": 3, "base": "/img/velora_right.png", "hover": "/img/velora_03.jpg" },
+    { "id": 4, "base": "/img/velora_top.png", "hover": "/img/velora_04.png" },
+    { "id": 5, "base": "/img/velora_back.png", "hover": "/img/velora_05.png" }
+  ]
+  },
+  {
+    "id": "retro-current",
+    "title": "RETRO CURRENT",
+    "price": 1180000,
+    "description": "단단한 구조감과 정제된 비례로 깔끔한 공간 연출",
+    "model3D": "/models/RETRO_CURRENT.glb",
+    "theme" : "dark",
+    "detailPoster": "/img/MainRetroCurrent.jpg",
+    "detailCuts": [
+    { "id": 1, "base": "/img/RETRO_CURRENT_front.png", "hover": "/img/Retro_Current_01.png" },
+    { "id": 2, "base": "/img/RETRO_CURRENT_left.png", "hover": "/img/Retro_Current_02.png" },
+    { "id": 3, "base": "/img/RETRO_CURRENT_side.png", "hover": "/img/Retro_Current_03.png" },
+    { "id": 4, "base": "/img/RETRO_CURRENT_top.png", "hover": "/img/Retro_Current_04.png" },
+    { "id": 5, "base": "/img/RETRO_CURRENT_back.png", "hover": "/img/Retro_Current_05.png" }
+  ]
+  },
+  {
+    "id": "veil",
+    "title": "VEIL",
+    "price": 1090000,
+    "description": "둥글게 감싸는 형태로 부드럽고 편안한 인상 전달",
+    "model3D": "/models/Veil.glb",
+    "theme" : "dark",
+    "detailPoster": "/img/MainVeil.jpg",
+    "detailCuts": [
+    { "id": 1, "base": "/img/Veil_front.png", "hover": "/img/cloud_01_room.jpg" },
+    { "id": 2, "base": "/img/Veil_left.png", "hover": "/img/cloud_02_room.jpg" },
+    { "id": 3, "base": "/img/Veil_right.png", "hover": "/img/cloud_03_room.jpg" },
+    { "id": 4, "base": "/img/Veil_top.png", "hover": "/img/cloud_04_room.jpg" },
+    { "id": 5, "base": "/img/Veil_back.png", "hover": "/img/cloud_05_room.jpg" }
+  ]
+  },
+  {
+    "id": "midnight",
+    "title": "MIDNIGHT",
+    "price": 1390000,
+    "description": "풍부한 볼륨과 유연한 가죽 주름으로 편안함을 직관적으로 전달",
+    "model3D": "/models/Midnight.glb",
+    "theme" : "light",
+    "detailPoster": "/img/MidnightMain.jpg",
+    "detailCuts": [
+    { "id": 1, "base": "/img/Midnight_front.png", "hover": "/img/Midnight_01.jpg" },
+    { "id": 2, "base": "/img/Midnight_left.png", "hover": "/img/Midnight_02.jpg" },
+    { "id": 3, "base": "/img/Midnight_right.png", "hover": "/img/Midnight_03.jpg" },
+    { "id": 4, "base": "/img/Midnight_top.png", "hover": "/img/Midnight_04.png" },
+    { "id": 5, "base": "/img/Midnight_back.png", "hover": "/img/Midnight_05.png" }
+    ]
+  },
+  {
+    "id": "chrome-haven",
+    "title": "CHROME HEAVEN",
+    "price": 1245000,
+    "description": "금속 프레임과 쿠션의 대비로 시선을 사로잡는 라운지 체어",
+    "model3D": "/models/CHROME_HAVEN.glb",
+    "theme" : "dark",
+    "detailPoster": "/img/detail_poster_chrome.jpg",
+    "detailCuts": [
+    { "id": 1, "base": "/img/CHROME_HAVEN_front.png", "hover": "/img/CHROME_HAVEN_01.png" },
+    { "id": 2, "base": "/img/CHROME_HAVEN_left.png", "hover": "/img/CHROME_HAVEN_02.png" },
+    { "id": 3, "base": "/img/CHROME_HAVEN_right.png", "hover": "/img/CHROME_HAVEN_03.png" },
+    { "id": 4, "base": "/img/CHROME_HAVEN_top.png", "hover": "/img/CHROME_HAVEN_04.png" },
+    { "id": 5, "base": "/img/CHROME_HAVEN_back.png", "hover": "/img/CHROME_HAVEN_05.png" }
+  ]
+  },
+  {
+    "id": "moss",
+    "title": "MOSS",
+    "price": 1150000,
+    "description": "수평과 수직의 조합으로 공간을 정돈하는 구조적 설계",
+    "model3D": "/models/Moss.glb",
+    "theme" : "light",
+    "detailPoster": "/img/MainMoss.jpg",
+    "detailCuts": [
+    { "id": 1, "base": "/img/Moss_front.png", "hover": "/img/Moss_01.png" },
+    { "id": 2, "base": "/img/Moss_left.png", "hover": "/img/Moss_02.png" },
+    { "id": 3, "base": "/img/Moss_right.png", "hover": "/img/Moss_03.png" },
+    { "id": 4, "base": "/img/Moss_top.png", "hover": "/img/Moss_04.png" },
+    { "id": 5, "base": "/img/Moss_back.png", "hover": "/img/Moss_05.png" }
+  ]
+  },
+  {
+    "id": "still",
+    "title": "STILL",
+    "price": 1210000,
+    "description": "인체 곡선을 고려한 각도로 장시간 착석에도 편안함 유지",
+    "model3D": "/models/Still.glb",
+    "theme" : "light",
+    "detailPoster": "/img/MainStill.jpg",
+    "detailCuts": [
+    { "id": 1, "base": "/img/Still_front.png", "hover": "/img/Still_01.png" },
+    { "id": 2, "base": "/img/Still_left.png", "hover": "/img/Still_02.png" },
+    { "id": 3, "base": "/img/Still_right.png", "hover": "/img/Still_03.png" },
+    { "id": 4, "base": "/img/Still_top.png", "hover": "/img/Still_04.png" },
+    { "id": 5, "base": "/img/Still_back.png", "hover": "/img/Still_05.png" }
+  ]
+  
+  }
+]

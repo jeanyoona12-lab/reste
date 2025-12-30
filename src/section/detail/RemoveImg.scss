@@ -1,0 +1,102 @@
+@use "../../assets/scss/mixins" as mixin;
+@use "../../assets/scss/font" as *;
+
+.detail_cut {
+  background: var(--color-sub-GR);
+  padding: 60px 0 80px;
+  overflow: hidden;
+}
+.detail_cut_head {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px 28px;
+}
+.detail_cut_title {
+  @include en-Display;
+  margin: 0;
+  font-size: clamp(36px, 4vw, 56px);
+  color: var(--color-100);
+}
+.detail_cut_viewport{
+  padding-bottom: 18px;
+}
+.detail_cut_track {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 372px;
+  gap: 2.5rem;
+  cursor: grab;
+  user-select: none;
+  touch-action: pan-x;
+  padding: 3rem 0;
+  scroll-padding-inline: 50%;
+  -ms-overflow-style: none;  // old Edge/IE
+  &::-webkit-scrollbar {     // WebKit
+    width: 0;
+    height: 0;
+  }
+  &.is-dragging { cursor: grabbing; }
+}
+.detail_card {
+  scroll-snap-align: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.18);
+  width: clamp(144px, 372px, 372px);
+  height: clamp(380px,560px, 560px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 34px rgba(0,0,0,0.22);
+  }
+}
+.detail_card_media {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  overflow: hidden;
+  padding: 28px;
+  @include mixin.flex-layout(row, center, center, 0);
+  .img_base {
+    position: absolute;
+    inset: 28px;
+    width: calc(100% - 56px);
+    height: calc(100% - 56px);
+    object-fit: contain;
+    opacity: 1;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    pointer-events: none;
+  }
+  .img_hover { 
+    position: absolute;
+    inset: 0; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity .25s ease;
+    pointer-events: none;
+  }
+}
+.detail_card:hover .img_base { opacity: 0; }
+.detail_card:hover .img_hover { opacity: 1; }
+@media (max-width: 768px) {
+  .detail_cut {
+    padding: 48px 0 64px;
+  }
+  .detail_cut_viewport{
+    padding-bottom: 18px;
+  }
+  .detail_cut_track {
+    grid-auto-columns: min(82vw, 360px);
+    gap: 2rem;
+  }
+}

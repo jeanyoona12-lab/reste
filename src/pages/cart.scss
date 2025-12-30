@@ -1,0 +1,170 @@
+@use '../assets/scss/variables.scss';
+@use '../assets/scss/font.scss' as * ;
+@use '../assets/scss/mixins.scss' as *;
+
+*{padding: 0; margin: 0; box-sizing: border-box;}
+#cart-page{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    .top{
+        display: block;
+        width: 100%;
+        height: 20vh;
+        gap: 30px;
+        background-color: #F3ECE6;
+        h1{
+            padding: 4rem;
+            @include en-Heading;
+        }
+    }
+    .middle{
+        width: 100%;
+        height: 45vh;
+        margin: 2rem 0;
+        padding: 0 1rem;
+        .cart-contents{
+            @include en-Body-Medium;
+            @include desktop{
+                padding: 0 3rem;
+            }
+            h1{
+                display: flex;
+                justify-content: flex-start;
+                @include en-Title;
+            }
+            .empty{
+                @include flex-layout();
+                padding: 4rem 0;
+                .icon{
+                    font-size: 30px;
+                    color: red;
+                }
+            }
+            .cart-wrap{
+                @include flex-layout(column,center,space-around);
+                .cart-list{
+                    padding: 1rem 2rem;
+                    li{
+                    @include flex-layout(row,center);
+                    border-bottom: 0.5px solid rgba(0,0,0,0.12);
+                    .img-box{
+                        width: 20%;
+                        img{width: 100%;
+                            @include desktop{
+                                width: 50%;;
+                            }
+                        }
+                    }
+                    .info-box{
+                        @include flex-layout(row,space-between);
+                        width: 70%;
+                        
+                        h3{
+                            @include en-Body-Medium;
+                            cursor:pointer;
+                            @include desktop{
+                                @include en-Title;
+                            }
+                            
+                        }
+
+                    .price-wrap{
+                        @include flex-layout(column,flex-start);
+                        @include desktop{
+                            @include en-Body-Large;
+                        }
+                        .count-wrap{
+                            @include flex-layout(row,center,space-around);
+                            // gap: 20px;
+                        
+                        
+                        span{
+                            cursor: pointer;
+                            width: 30px;
+                        }
+                        button{ 
+                        cursor: pointer;
+                        border: none;
+                        background: none;
+                        padding: 0;
+                        font-size: 20px;
+                        }
+                    }
+                    }
+                }
+                    > button{
+                        cursor: pointer;
+                        border: none;
+                        background: none;
+                        padding: 0;
+                        font-size: 20px;
+                        font-weight: 200;
+                        @include desktop{
+                            font-size: 30px;
+                        }
+                    }
+                    }
+                }
+            }
+        }
+    }
+    
+    .buy{
+        @include flex-layout(row,space-around,center);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 15vh;
+        background-color: #78644E;
+        color: var(--color-100);
+        @include desktop{
+            @include flex-layout(row,right);
+            position: static;
+            padding: 0 5rem;
+            
+        }
+        div{
+            span{
+                @include flex-layout(column,center,center);
+                @include en-Body-Medium;
+                text-align: center;
+                &:nth-child(1){
+                    font-size: 1.5rem;
+                }
+                @include desktop{
+                    @include en-Body-Large;
+                }
+            }
+        }
+        button{
+            width: 200px;
+            color: var(--color-BK);
+            padding: 1rem 2rem;
+            border: 1px solid var(--color-main);
+            border-radius: 5rem;
+            cursor: pointer;
+            transition: 0.5s;
+            @include ko-Body-Medium;
+            &:hover{
+                background-color: var(--color-BK);
+                border: 0.3px solid var(--color-BK);
+                color: var(--color-main);
+                box-shadow: 0 4px 4px rgba(0,0,0,25%);
+                transition: 0.5s
+            }
+            @include desktop{
+                @include ko-Body-Large;
+            }
+        }
+        .pay-btn.disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            
+            
+    }
+    
+}
+}
+
+
