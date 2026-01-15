@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/reste/static/css/main.ccd6a34d.css",
+    "main.css": "/reste/static/css/main.c0286352.css",
     "main.js": "/reste/static/js/main.126a69f7.js",
     "static/media/AritaBuriKR-Medium.ttf": "/reste/static/media/AritaBuriKR-Medium.2a9636f150ad224d6c88.ttf",
     "static/media/AritaBuriKR-SemiBold.ttf": "/reste/static/media/AritaBuriKR-SemiBold.3993ef1b29c4be2a39fc.ttf",
@@ -94,11 +94,11 @@
     "static/media/logo-black.png": "/reste/static/media/logo-black.d4569ed622f5787705a6.png",
     "static/media/logo-white.png": "/reste/static/media/logo-white.f8d271b45e47f86c3dd0.png",
     "index.html": "/reste/index.html",
-    "main.ccd6a34d.css.map": "/reste/static/css/main.ccd6a34d.css.map",
+    "main.c0286352.css.map": "/reste/static/css/main.c0286352.css.map",
     "main.126a69f7.js.map": "/reste/static/js/main.126a69f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccd6a34d.css",
+    "static/css/main.c0286352.css",
     "static/js/main.126a69f7.js"
   ]
 }
