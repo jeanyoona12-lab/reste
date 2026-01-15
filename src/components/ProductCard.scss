@@ -1,4 +1,6 @@
 @use "../assets/scss/font" as *;
+@use "../assets/scss/mixins" as *;
+@use "../assets/scss/variables" as *;
 
 /* 카드 그리드 정렬 */
 .product-card {
@@ -76,11 +78,11 @@
 
 // 텍스트 반응형
 @media (max-width: 768px) {
-    .main_txt{
-        transform: translateY(-30px)
+    .main_txt {
+        transform: translateY(-30px);
     }
-    .product-card{
-        transform: translateY(-60px)
+    .product-card {
+        transform: translateY(-60px);
     }
     .inner-card .info {
         transform: translateY(0);
@@ -90,3 +92,6 @@
         @include en-Body-Medium;
     }
 }
+
+
+

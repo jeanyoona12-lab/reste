@@ -5,7 +5,7 @@
 * **설명:** 기획부터 디자인, 개발까지 직접 참여하였으며, **Mock Data(JSON)**를 활용해 실제 커머스 로직을 구현한 SPA 쇼핑몰 프로젝트입니다.
 * **진행 기간:** 2025.12.XX ~ 2025.12.XX (N일)
 * **개발 인원:** FrontEnd 5인 (Team Project)
-* **배포 링크:** [바로가기 URL 클릭]
+* **배포 링크:** [[바로가기 URL 클릭](https://jeanyoona12-lab.github.io/reste/)]
 
 ## 2. 사용 기술 스택 (Tech Stack)
 * **Language:** JavaScript (ES6+)
@@ -23,7 +23,8 @@
 src
 ├── assets        # 이미지, 폰트 및 JSON 데이터
 ├── components    # 재사용 가능한 공통 UI 컴포넌트
-├── pages         # 라우팅 페이지 (Main, Detail, Cart...)
+├── pages           # 라우팅 페이지 (Main, Detail, Cart...)
+├── section          # 라우팅 페이지의 하위 섹션 페이지 (Best-item,detail-page..)
 └── layout        # Header, Footer 등 레이아웃
 
 ## 5. 담당 역할
